@@ -43,6 +43,9 @@ kind: StatefulSet
 metadata:
   name: zk
 spec:
+  selector:
+    matchLabels:
+      app: zk # has to match .spec.template.metadata.labels
   serviceName: zk-hs
   replicas: 3
   podManagementPolicy: Parallel
