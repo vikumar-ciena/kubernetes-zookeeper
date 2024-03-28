@@ -76,7 +76,7 @@ spec:
         command:
         - sh
         - -c
-        - "mkdir -p /bp2/data/config /bp2/data/log /bp2/log; bash -x start-zookeeper \
+        - "start-zookeeper \
           --servers=1 \
           --data_dir=/bp2/data \
           --data_log_dir=/bp2/data/log \
